@@ -11,7 +11,7 @@ import { UserService } from '../user.service';
   styleUrls: ['./register.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class RegisterComponent implements OnInit, OnDestroy {
+export class RegisterComponent implements OnInit {
   @ViewChild('f') register: NgForm;
   currentPath;
   value:string = "register";
@@ -28,9 +28,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
     if (this.value === this.currentPath){
       this.flag = false;
     }
-    // const registeredUser = Observable.create((observer : Observer<boolean>) => {
-    //   observer.next(this.flag);
-    // });
     this.userService.userRegistered.next(this.flag);
   }
 
@@ -40,8 +37,5 @@ export class RegisterComponent implements OnInit, OnDestroy {
   onCancel(){
     this.router.navigate(['/home'])
     this.userService.userRegistered.next(true);
-  }
-  ngOnDestroy(): void {
-    // this.userService.userRegistered.unsubscribe();
   }
 }

@@ -6,7 +6,7 @@ import { UserService } from './user.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
   title = 'Assignment2';
   showNav:boolean = true;
 
@@ -17,8 +17,5 @@ export class AppComponent implements OnInit, OnDestroy {
       console.log(isRegistered);
       this.showNav = isRegistered;
     })
-  }
-  ngOnDestroy(): void {
-    // this.userService.userRegistered.unsubscribe();
   }
 }

@@ -17,20 +17,20 @@
     font-weight: bold;
     border: 0;
 }
-label{
+ label{
     font-size: 18px; 
     font-weight: bold;
 }
-.shadow-textarea textarea.form-control::placeholder {
+ .shadow-textarea textarea.form-control::placeholder {
     font-weight: 300;
 }
-.shadow-textarea textarea.form-control {
+ .shadow-textarea textarea.form-control {
     padding-left: 0.8rem;
 }
-.help-block {
+ .help-block {
     color: red;
   }
-button {
+ button {
     display: inline-block;
     margin: 2px auto;
     margin-left: 38px;
@@ -43,9 +43,8 @@ button {
     border-radius: 3px;
     cursor: pointer;
     transition: ease .3s;
-}
-  
-button:hover {
+} 
+ button:hover {
     background: #8BC34A;
     color: #ffffff;
 }

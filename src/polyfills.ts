@@ -24,6 +24,7 @@ import '@angular/localize/init';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 import 'classlist.js';  // Run `npm install --save classlist.js`.
+// Logic referenced from : https://dev.to/getamano/angular-8-x-9-x-internet-explorer-not-working-quick-solution-3ha7
 
 /**
  * Web Animations `@angular/platform-browser/animations`
@@ -31,6 +32,7 @@ import 'classlist.js';  // Run `npm install --save classlist.js`.
  * Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
  */
 import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+// Logic referenced from : https://dev.to/getamano/angular-8-x-9-x-internet-explorer-not-working-quick-solution-3ha7
 
 /**
  * By default, zone.js will patch all possible macroTask and DomEvents
