@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="text-center pageHeading">
+        <h1>Upload your medical prescription here</h1>
+    </div>
+    <div class="parentCss">
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
+            <br>
+            <br>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-sm-2 pt-0 col-form-label">Address *</legend>
+                    <div class="form-check col-sm-6 shadow-textarea">
+                        <textarea class="column form-control z-depth-1" 
+                        id="comments textView"
+                        placeholder="Please enter your address here" 
+                        rows="3" name="address" 
+                        ngModel required [disabled] = "addressBoxDisabled"
+                        #address="ngModel"></textarea>
+                        <span class="help-block" *ngIf="!address.valid && address.touched">
+                            Please enter a valid address</span>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row" style="margin-left: 3px;">
+                <input class="form-check-input" type="radio" name="address" id="address1" value="saved">
+                <label class="form-check-label" for="address1" (click)="toggleAddress()">
+                    Use previously saved address</label><br>
+                <input class="form-check-input" type="radio" id="address2" name="address" value="new" checked>
+                <label class="form-check-label" for="address2" (click)="toggleAddress()">
+                    Enter a new address</label><br>
+            </div>
+            <div class="form-group">
+                <label for="uploadPrescription">Upload Prescription file *</label>
+                <input type="file" class="form-control-file" (change)="uploadFile($event)"
+                id="uploadPrescription" required>
+            </div>
+            <div class="form-group row">
+                <legend class="col-sm-2 pt-0 col-form-label">Email</legend>
+                    <div class="form-check col-sm-6 shadow-textarea">
+                        <input class="column form-control z-depth-1" id="email" type="email"
+                            placeholder="Please enter your email here" name="email" email
+                            ngModel #email="ngModel">
+                        <span class="help-block" *ngIf="!email.valid && email.touched">
+                            Please enter a valid e-mail address</span>
+                    </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Additional Comments</legend>
+                    <div class="form-check col-sm-6 shadow-textarea">
+                        <textarea class="column form-control z-depth-1" id="comments textView"
+                            placeholder="Please enter additional comments/delivery descriptions here" 
+                            rows="3"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-5 text-center">
+                    <button type="submit" [disabled]="!f.valid || !isPrescription" 
+                    class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

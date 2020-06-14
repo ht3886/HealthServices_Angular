@@ -1,0 +1,97 @@
+<div>
+    <div class="slider" >
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <img class="img-class" src="{{ slide.img }}" alt="">
+            </div>
+        </ngx-slick-carousel>
+    </div>
+    <br>
+    <div class="home-wrapper row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h1>Title text here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Integer venenatis mauris arcu, et lobortis nisl vehicula ac. 
+                Cras risus ante, bibendum sit amet elit eu, faucibus maximus dui. 
+                Nulla commodo finibus ante nec facilisis. Integer in erat enim. 
+                Cras sodales massa ac tellus auctor, a viverra neque vulputate. 
+                Suspendisse nunc ex, convallis in cursus id, bibendum non turpis. 
+                Ut maximus volutpat mi, et pharetra tellus facilisis et. Nam dignissim 
+                justo vel libero varius, quis semper nisi dapibus. Orci varius natoque 
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Sed sit amet ultricies libero, vel sodales orci. Sed sit amet euismod 
+                nisi. Vivamus id tellus et augue blandit pulvinar. Suspendisse potenti. 
+                Nam blandit elit interdum, condimentum metus quis, molestie diam.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <br>
+            <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
+                venenatis mauris arcu, et lobortis nisl vehicula ac. Cras risus ante, 
+                bibendum sit amet elit eu, faucibus maximus dui. Nulla commodo finibus 
+                ante nec facilisis.
+            </h3>
+        </div>
+    </div>
+    <div class="row tools-home">
+        <div class="tools-heading">
+            <h2>Tools to change your life</h2>
+            <br>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="">
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Icon-notepad.svg/256px-Icon-notepad.svg.png">
+                    </div>
+                    <br>
+                    <div>
+                        <h3>
+                            Record - Track - Improve
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer venenatis mauris arcu, et lobortis nisl vehicula ac.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="">
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Creative-Tail-medicine.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <h3>
+                            Medication at your doorstep
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer venenatis mauris arcu, et lobortis nisl vehicula ac.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="">
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Creative-Tail-People-doctor.svg">
+                    </div>
+                    <br>
+                    <div>
+                        <h3>
+                            Consult with experienced Doctors
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Integer venenatis mauris arcu, et lobortis nisl vehicula ac.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,226 @@
+/* .sign-up{
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 70px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+.img-div-class {
+  width: 50%; 
+  float: left; 
+  display:grid;
+  margin: 10px 0px 0px 0px;
+}
+.img-class {
+  width:300px;
+  height: 400px; 
+  display:block;
+  margin:0px 0px 0px 289.8px;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+.form-class {
+  width: 50%; 
+  float: right
+}
+form {
+  width: 300px;
+  height: 400px; 
+  margin: 10px 0px 0px 0px;
+  background: #efefef;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+input:focus + .line-box .line {
+  width: 100%;
+}
+
+.success {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(120,120,120);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+.submit-button {
+  position: absolute;
+  margin-left: 70px;
+  bottom: 5px;
+  width: 10%;
+  }
+
+.success:hover {
+  background: #8BC34A;
+  color: #ffffff;
+}
+input.ng-invalid.ng-touched  {
+  border: 1px solid red;
+}
+.input-div {
+  text-align: center;
+  height: 40px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.first-input {
+  margin-top: 30%;
+}
+.help-block {
+  font-size: 11px;
+}
+.cancel {
+  float: right;
+  margin-right: -28px;
+  margin-top: -8px;
+}
+
+@media (max-width: 900px) {
+  .img-div-class{display:none;}
+  .form-class
+  {
+    text-align: center;
+    display: block;
+  }
+  .adjustSize{
+    text-align: center;
+    margin-left: 25%;
+  }
+  .form-class{
+    text-align: center;
+    float: none;
+  }
+} */
+/* .bgColor {
+  background-color: rgb(50, 110, 167); 
+  background-image: linear-gradient(to right, rgb(43, 68, 149) , rgb(158, 203, 243)); 
+} */
+.sign-up{
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 70px;
+  font-family: "Lucida Console", Courier, monospace;
+ }
+ .container{
+  text-align: center;
+ }
+ .font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+ }
+ .font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+ }
+ .img-class {
+  width:350px;
+  height: 400px;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  float: right;
+ }
+ .form-div{
+  width: 350px;
+  height: 400px; 
+  text-align: center;
+  background: #efefef;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  margin: auto;
+  float: left;
+}
+
+ input {
+  text-align: center;
+  border: none;
+  /* outline: none; */
+  /* width: 50%; */
+  padding: 10px;
+ }
+ .success {
+  /* display: inline-block; */
+  /* margin: 25px auto; */
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(120,120,120);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+.submit-button {
+  /* position: absolute; */
+  /* margin-left: 70px; */
+  bottom: 5px;
+  /* width: 10%; */
+  }
+.success:hover {
+  background: #8BC34A;
+  color: #ffffff;
+}
+input.ng-invalid.ng-touched  {
+  border: 1px solid red;
+}
+.input-div {
+  text-align: center;
+}
+.help-block {
+  font-size: 11px;
+  color: red;
+}
+.cancel {
+  float: right;
+  margin-right: -30px;
+  margin-top: -20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 50%;
+}
+@media screen and (max-width: 750px) {
+  .column {
+    flex: 55%;
+    margin: none;
+  }
+  .form-div{
+    float: none;
+  }
+  .img-class{
+    float: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    margin: none;
+  }
+  .form-div{
+    float: none;
+  }
+  .img-class{
+    float: none;
+  }
+}

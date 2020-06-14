@@ -1,0 +1,76 @@
+<div class="parentCss">
+    <form (ngSubmit)="onSubmit()" 
+    #f="ngForm">
+        <div class="form-group row">
+            <label for="inputFirstName" class="col-sm-2 col-form-label" >
+                First Name *</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputFirstName"
+                name="firstName" ngModel required #firstName="ngModel" >
+                <span class="help-block" *ngIf="!firstName.valid && firstName.touched">
+                    Please enter a valid first name</span> 
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputLastName" class="col-sm-2 col-form-label">
+                Last Name *</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputLastName" 
+                name="lastName" ngModel required #lastName="ngModel">
+                <span class="help-block" *ngIf="!lastName.valid && lastName.touched">
+                    Please enter a valid last name</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">
+                Email Address *</label>
+            <div class="col-sm-3">
+                <input type="email" class="form-control" id="inputEmail" email
+                name="email" ngModel required #email="ngModel">
+                <span class="help-block" *ngIf="!email.valid && email.touched">
+                    Please enter a valid email address</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="careDate" class="col-sm-2 col-form-label">
+                Home Care Date *</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" id="careDate" required ngModel
+                #careDate="ngModel" name="careDate">
+                <span class="help-block" *ngIf="!careDate.valid && careDate.touched">
+                    Please enter a valid date</span>
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-sm-2 pt-0 col-form-label">Address *</legend>
+                    <div class="form-check col-sm-6 shadow-textarea">
+                        <textarea class="column form-control z-depth-1" 
+                        id="comments textView" 
+                        placeholder="Please enter your address here" 
+                        rows="3" name="address" ngModel required 
+                        #address="ngModel"></textarea>
+                        <span class="help-block" *ngIf="!address.valid && address.touched">
+                            Please enter a valid address</span>
+                    </div>
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Comments</legend>
+                    <div class="form-check col-sm-6 shadow-textarea">
+                        <textarea class="column form-control z-depth-1" 
+                        id="comments textView" 
+                        placeholder="Please enter additional comments here" 
+                        rows="3"></textarea>
+                    </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-5 text-center">
+              <button type="submit" [disabled]="!f.valid" 
+              class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

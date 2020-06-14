@@ -1,0 +1,163 @@
+<!-- <div>
+    <div class="sign-up">
+        <br>
+        <h2>Sign Up with Health Logger</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row outer-class">
+            <div class="column img-div-class">
+                <img class="img-class" src="https://p0.piqsels.com/preview/197/436/58/active-blonde-body-cardio.jpg" />
+            </div>
+            <div class="column form-class">
+                <form action="" class="form-horizontal" (ngSubmit)="onSubmit()" #f="ngForm">
+                    <button type="button" class="glyphicon glyphicon-remove cancel" (click)="onCancel()"></button>
+                    <div class="form-inline input-div first-input">
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" placeholder="Enter name here" ngModel
+                                name="name" required #name="ngModel">
+                            <span class="help-block" *ngIf="!name.valid && name.touched">
+                                Please enter a valid name</span>
+                        </div>
+                    </div>
+                    <div class="form-inline input-div">
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" ngModel
+                                name="email" required email #email="ngModel">
+                            <span class="help-block" *ngIf="!email.valid && email.touched">
+                                Please enter a valid email</span>
+                        </div>
+                    </div>
+                    <div class="form-inline input-div">
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="password" placeholder="Choose a password"
+                                ngModel name="password" minlength="6" required #password="ngModel">
+                            <span class="help-block" *ngIf="!password.valid && password.touched">
+                                Password must be atleast 6 characters</span>
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button class="btn btn-primary success" type="submit" [disabled]="!f.valid"
+                            [ngStyle]="{'cursor': (!f.valid? 'not-allowed':'pointer')}">
+                            Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div>
+    <div class="sign-up">
+        <br>
+        <h2>Sign Up with Health Logger</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-6 img-div-class">
+                <img class="img-class" src="https://p0.piqsels.com/preview/197/436/58/active-blonde-body-cardio.jpg" />
+            </div>
+            <div class="row adjustSize">
+                <div class="col-sm-6 form-class">
+                    <form action="" class="form-horizontal" (ngSubmit)="onSubmit()" #f="ngForm">
+                        <button type="button" class="glyphicon glyphicon-remove cancel" (click)="onCancel()"></button>
+                        <div class="form-inline input-div first-input">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" placeholder="Enter name here" ngModel
+                                    name="name" required #name="ngModel">
+                                <span class="help-block" *ngIf="!name.valid && name.touched">
+                                    Please enter a valid name</span>
+                            </div>
+                        </div>
+                        <div class="form-inline input-div">
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" ngModel
+                                    name="email" required email #email="ngModel">
+                                <span class="help-block" *ngIf="!email.valid && email.touched">
+                                    Please enter a valid email</span>
+                            </div>
+                        </div>
+                        <div class="form-inline input-div">
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" placeholder="Choose a password"
+                                    ngModel name="password" minlength="6" required #password="ngModel">
+                                <span class="help-block" *ngIf="!password.valid && password.touched">
+                                    Password must be atleast 6 characters</span>
+                            </div>
+                        </div>
+                        <div class="submit-button">
+                            <button class="btn btn-primary success" type="submit" [disabled]="!f.valid"
+                                [ngStyle]="{'cursor': (!f.valid? 'not-allowed':'pointer')}">
+                                Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div>
+    <div class="sign-up">
+        <br>
+        <h2>Sign Up with Health Logger</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="column ">
+                <img class="img-class " src="https://p0.piqsels.com/preview/197/436/58/active-blonde-body-cardio.jpg" />
+            </div>
+            <div class="column">
+                <div class="form-div ">
+                    <form action="" (ngSubmit)="onSubmit()" #f="ngForm">
+                        <button type="button" class="glyphicon glyphicon-remove cancel" (click)="onCancel()"></button>
+                        <div class="row">
+                            <div class="column">
+                                <br><br><br>
+                                <input type="text" id="name" 
+                                placeholder="Enter name here" ngModel
+                                    name="name" required #name="ngModel">
+                                <span class="help-block" *ngIf="!name.valid && name.touched">
+                                    Please enter a valid name</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <br>
+                                <input type="email"  
+                                id="email" placeholder="Enter your email"
+                                    ngModel name="email" required email #email="ngModel">
+                                <span class="help-block" *ngIf="!email.valid && email.touched">
+                                    Please enter a valid email</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <br>
+                                <input type="password" id="password"
+                                    placeholder="Enter a password" ngModel name="password" minlength="6" required
+                                    #password="ngModel">
+                                <span class="help-block" *ngIf="!password.valid && password.touched">
+                                    Password must be atleast 6 characters</span>
+                            </div>
+                        </div>
+                        <div class="submit-button">
+                            <br>
+                            <button class="btn btn-primary success" type="submit" [disabled]="!f.valid"
+                                [ngStyle]="{'cursor': (!f.valid? 'not-allowed':'pointer')}">
+                                Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
