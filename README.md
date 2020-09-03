@@ -58,7 +58,7 @@ Contact Us page link - https://health-logger-web-asgmt2.herokuapp.com/contactUs
 ## Screenshots
 
 * Registeration page
-![](src/assets/Registration)
+![](src/assets/Registration.png)
 
 
 ## Built With
