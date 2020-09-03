@@ -1,10 +1,10 @@
-# CSCI 5709: Assignment 2
+# Project Overview
 
 This web application is the Front-End implementation of HealthLogger web application. The user can register, order medicine, 
 view services, know how to contact us, know more about us and schedule home care.
 
 * Date Created: 14 06 2020
-* Last Modification Date: 14 06 2020
+* Last Modification Date: 03 09 2020
 
 ## Authors
 
@@ -54,6 +54,12 @@ Book Home Care page link - https://health-logger-web-asgmt2.herokuapp.com/homeCa
 Order Medicine page link - https://health-logger-web-asgmt2.herokuapp.com/orderMedicine
 About Us page link - https://health-logger-web-asgmt2.herokuapp.com/aboutUs
 Contact Us page link - https://health-logger-web-asgmt2.herokuapp.com/contactUs
+
+## Screenshots
+
+* Registeration page
+![alt text](https://health-logger-web-asgmt2.herokuapp.com/register)
+
 
 ## Built With
 
@@ -169,10 +175,3 @@ The dummy text is used in multiple pages, namely about-us.component.html, home-s
 * Landing page notepad image referenced from - https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Icon-notepad.svg/256px-Icon-notepad.svg.png
 * Landing page medicine image referenced from - https://upload.wikimedia.org/wikipedia/commons/a/ab/Creative-Tail-medicine.svg
 * Landing page doctor image referenced from - https://upload.wikimedia.org/wikipedia/commons/f/f8/Creative-Tail-People-doctor.svg
-
-## Tasks performed beyond basic requirements
-
-* In total, I have created 7 pages for this assignment.
-* The web application is thoroughly tested across popular browsers such as Chrome, Edge, Internet Explorer, Firefox, Opera and Safari 
-on desktop, tablet and mobile screens.
-* Used third party carousel library in order to enhance user experience.
