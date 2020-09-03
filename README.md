@@ -57,19 +57,19 @@ Contact Us page link - https://health-logger-web-asgmt2.herokuapp.com/contactUs
 
 ## Screenshots
 
-* Home page
+### Home page
 ![](src/assets/HomePage.png)
 
-* Registeration page
+### Registeration page
 ![](src/assets/Registration.png)
 
-* Home Care Service page
+### Home Care Service page
 ![](src/assets/HomeCare.png)
 
-* Book Home Care page
+### Book Home Care page
 ![](src/assets/ScheduleCare.png)
 
-* Order Medicine page
+### Order Medicine page
 ![](src/assets/OrderMedicine.png)
 
 ## Built With
